@@ -1,1 +1,1 @@
-# basic_gemini_app_update
+# basic_gemini_app

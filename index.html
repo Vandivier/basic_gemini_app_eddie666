@@ -1,35 +1,42 @@
-<h1>hello world title</h1>
+<body>
+    <h1>hello world title</h1>
 
-<style>
-    h2 {
-        font-size: 24px;
-        font-style: italic;
-        color: black;
-    }
 
-    .good-food {
-        color: green;
-    }
+    <section id="blog-articles">
+        <div>
+            <h2>one day I ate some good food</h2>
+            <p class="good-food">I had a good time!</p>
+            <p class="good-food">The meal included a burger and fries.</p>
+        </div>
 
-    .bad-food {
-        color: red;
-    }
+        <div id="second-article">
+            <h2>today I had some bad food</h2>
+            <p class="bad-food">I threw up after. The meal included fish. I think it was undercooked.</p>
+        </div>
+        
+    </section>
 
-    #second-article h2 {
-        color: red;
-    }
-</style>
+    <style>
+        h2 {
+            font-size: 24px;
+            font-style: italic;
+            color: black;
+        }
 
-<section id="blog-articles">
-    <div>
-        <h2>one day I ate some good food</h2>
-        <p class="good-food">I had a good time!</p>
-        <p class="good-food">The meal included a burger and fries.</p>
-    </div>
+        .good-food {
+            color: green;
+        }
 
-    <div id="second-article">
-        <h2>today I had some bad food</h2>
-        <p class="bad-food">I threw up after. The meal included fish. I think it was undercooked.</p>
-    </div>
-    
-</section>
+        .bad-food {
+            color: red;
+        }
+
+        #second-article h2 {
+            color: red;
+        }
+
+        #blog-articles > div:first-child::before {
+            content: "🍔";
+        }
+    </style>
+</body>
